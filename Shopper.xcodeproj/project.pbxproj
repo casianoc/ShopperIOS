@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C76F8A4E237AFC3E0071D3FC /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76F8A4D237AFC3E0071D3FC /* ShoppingListTableViewController.swift */; };
 		C7B3D5842371C09D007F25A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B3D5832371C09D007F25A7 /* AppDelegate.swift */; };
 		C7B3D5862371C09D007F25A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B3D5852371C09D007F25A7 /* SceneDelegate.swift */; };
 		C7B3D5882371C09D007F25A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B3D5872371C09D007F25A7 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C76F8A4D237AFC3E0071D3FC /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		C7B3D5802371C09C007F25A7 /* Shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B3D5832371C09D007F25A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7B3D5852371C09D007F25A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				C7B3D5942371C09E007F25A7 /* Info.plist */,
 				C7B3D58C2371C09D007F25A7 /* Shopper.xcdatamodeld */,
 				C7B3D59A2371C422007F25A7 /* ShopperTableViewController.swift */,
+				C76F8A4D237AFC3E0071D3FC /* ShoppingListTableViewController.swift */,
 			);
 			path = Shopper;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				C7B3D58E2371C09D007F25A7 /* Shopper.xcdatamodeld in Sources */,
 				C7B3D5842371C09D007F25A7 /* AppDelegate.swift in Sources */,
 				C7B3D5862371C09D007F25A7 /* SceneDelegate.swift in Sources */,
+				C76F8A4E237AFC3E0071D3FC /* ShoppingListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
