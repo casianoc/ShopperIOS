@@ -8,14 +8,28 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
+// implemeentes UNUserNotificationCenterDelegate to allow Shopper to post notifications
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
+    // implemented willPresent method in order to conform to the UNUNCD
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        // specify the types of notifications that shopper will allow
+        completionHandler([.alert, .sound])
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // allow notifications ot be posted when shopper is in the foreground
+        UNUserNotificationCenter.current().delegate = self
+        
+        // when Shopper launches tis line of code will result in an alert being displayed that requests permission from the user to post notifications
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound], completionHandler: {(granted, error) in
+            
+        })
         return true
     }
 
